@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source              = { :http => 'https://d3e51fp79zp4el.cloudfront.net/library/ios/v4.2/helpshift-ios-4.2.0.zip' }
   s.platform            = :ios, '5.0'
   s.source_files        = 'helpshift-ios-4.2.0/Helpshift.h'
-  s.resources           = 'helpshift-ios-4.2.0/HSResources/*.png'
+  s.resources           = 'helpshift-ios-4.2.0/HSResources/*.png', 'helpshift-ios-4.2.0/HSLocalization/*.lproj'
   s.preserve_paths      = 'helpshift-ios-4.2.0/libHelpshift.a', 'helpshift-ios-4.2.0/HSLocalization/*.lproj', 'helpshift-ios-4.2.0/HSThemes/*.plist'
   s.frameworks          = 'CoreGraphics', 'QuartzCore', 'CoreText', 'SystemConfiguration', 'CoreTelephony', 'Foundation', 'UIKit'
   s.libraries           = 'sqlite3.0', 'z', 'Helpshift'
